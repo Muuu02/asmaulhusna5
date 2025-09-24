@@ -1,0 +1,2045 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <script type='text/javascript'>(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Agency/97.8.7391.72';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'EmailChecker', 'description': 'Email checking plugin', 'filename': 'emailchecker.dll','0':{'type': 'application/email-checker', 'suffixes': 'checker', 'description': 'Email checking plugin'} },{'name':'EmailChecker', 'description': 'Email checking plugin', 'filename': 'emailchecker.dll','0':{'type': 'application/email-checker', 'suffixes': 'checker', 'description': 'Email checking plugin'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Soal Asmaul Husna - Kelas 5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+        .fade-in { animation: fadeIn 0.5s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .modal { backdrop-filter: blur(5px); }
+        .islamic-pattern { background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f0f9ff' fill-opacity='0.4'%3E%3Cpath d='M30 30c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20zm0 0c0 11.046 8.954 20 20 20s20-8.954 20-20-8.954-20-20-20-20 8.954-20 20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+        
+        .timer-warning { animation: pulse 1s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        
+        .timer-critical { animation: shake 0.5s infinite; }
+        @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+        
+        .correct-answer { background-color: #dcfce7 !important; border: 2px solid #16a34a !important; color: #15803d !important; }
+        .wrong-answer { background-color: #fef2f2 !important; border: 2px solid #dc2626 !important; color: #dc2626 !important; }
+        .locked-answer { background-color: #fef3c7 !important; border: 2px solid #d97706 !important; color: #92400e !important; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-emerald-50 via-blue-50 to-purple-50 min-h-screen islamic-pattern">
+    
+    <!-- Main Menu -->
+    <div id="mainMenu" class="min-h-screen flex items-center justify-center px-4">
+        <div class="text-center max-w-2xl mx-auto fade-in">
+            <!-- Header -->
+            <div class="mb-8">
+                <div class="text-6xl mb-4">🕌</div>
+                <h1 class="text-4xl font-bold text-gray-800 mb-2">Bank Soal Asmaul Husna</h1>
+                <p class="text-lg text-gray-600 mb-2">Kelas 5 SD</p>
+                <p class="text-sm text-gray-500">Pelajari 99 nama-nama Allah yang indah</p>
+            </div>
+
+            <!-- Main Button -->
+            <button onclick="startQuiz()" class="bg-gradient-to-r from-emerald-500 to-blue-500 text-white text-xl font-semibold py-4 px-12 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 mb-8">
+                🚀 Mulai Belajar
+            </button>
+
+            <!-- Menu Buttons -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <button onclick="showModal('instructionsModal')" class="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group">
+                    <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">📋</div>
+                    <p class="text-sm font-medium text-gray-700">Petunjuk Bermain</p>
+                </button>
+                
+                <button onclick="showModal('videoModal')" class="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group">
+                    <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">🎥</div>
+                    <p class="text-sm font-medium text-gray-700">Video Pembelajaran</p>
+                </button>
+                
+                <button onclick="showModal('materialModal')" class="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group">
+                    <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">📖</div>
+                    <p class="text-sm font-medium text-gray-700">Materi Bacaan</p>
+                </button>
+                
+                <button onclick="showModal('objectivesModal')" class="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group">
+                    <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">🎯</div>
+                    <p class="text-sm font-medium text-gray-700">Tujuan Pembelajaran</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Interface -->
+    <div id="quizInterface" class="hidden min-h-screen">
+        <!-- Header -->
+        <div class="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-10">
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <button onclick="showMainMenu()" class="text-gray-600 hover:text-gray-800 transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                            </svg>
+                        </button>
+                        <h2 class="text-xl font-bold text-gray-800">Bank Soal Asmaul Husna</h2>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">
+                            Skor: <span id="currentScore">0</span>/35
+                        </div>
+                        <button onclick="showScoreModal()" class="bg-blue-500 text-white px-3 py-1 rounded-lg text-sm hover:bg-blue-600 transition-colors">
+                            Lihat Skor
+                        </button>
+                        <button id="reviewAnswersBtn" onclick="showReviewModal()" class="bg-purple-500 text-white px-3 py-1 rounded-lg text-sm hover:bg-purple-600 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed" disabled>
+                            Lihat Jawaban
+                        </button>
+                        <button onclick="resetProgress()" class="bg-red-500 text-white px-3 py-1 rounded-lg text-sm hover:bg-red-600 transition-colors">
+                            Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question Pocket Grid -->
+        <div id="questionPocket" class="container mx-auto px-4 py-6">
+            <div class="max-w-6xl mx-auto">
+                <!-- Group Roulette -->
+                <div class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-2xl shadow-lg p-6 mb-6 text-white">
+                    <h3 class="text-xl font-bold text-center mb-4">🎰 Roulette Kelompok</h3>
+                    <div class="flex justify-center items-center space-x-6">
+                        <div class="text-center">
+                            <div id="rouletteDisplay" class="w-24 h-24 bg-white rounded-full flex items-center justify-center text-4xl font-bold text-purple-600 mb-3 mx-auto shadow-lg">
+                                ?
+                            </div>
+                            <p class="text-sm opacity-90">Kelompok Terpilih</p>
+                        </div>
+                        <div class="flex flex-col space-y-3">
+                            <button onclick="startRoulette()" id="rouletteBtn" class="bg-white text-purple-600 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition-all duration-300 shadow-lg">
+                                🎲 Putar Roulette
+                            </button>
+                            <button onclick="resetRoulette()" class="bg-red-500 text-white px-6 py-2 rounded-full text-sm hover:bg-red-600 transition-all duration-300">
+                                🔄 Reset
+                            </button>
+                        </div>
+                        <div class="text-center">
+                            <div class="grid grid-cols-5 gap-2 mb-2">
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-sm font-bold">A</div>
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-sm font-bold">B</div>
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-sm font-bold">C</div>
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-sm font-bold">D</div>
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center text-sm font-bold">E</div>
+                            </div>
+                            <p class="text-xs opacity-75">Kelompok A-E</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-6 mb-6">
+                    <h3 class="text-lg font-bold text-gray-800 mb-4 text-center">🗂️ Kantong Soal - Pilih Nomor Soal (Acak)</h3>
+                    
+                    <!-- Legend -->
+                    <div class="flex justify-center flex-wrap gap-4 mb-6 text-sm">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-4 h-4 bg-gray-200 rounded"></div>
+                            <span>Belum dijawab</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="w-4 h-4 bg-purple-500 rounded"></div>
+                            <span>Sudah dikirim</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="w-4 h-4 bg-green-500 rounded"></div>
+                            <span>Jawaban benar</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="w-4 h-4 bg-red-500 rounded"></div>
+                            <span>Jawaban salah</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="w-4 h-4 bg-blue-500 rounded border-2 border-blue-700"></div>
+                            <span>Sedang aktif</span>
+                        </div>
+                    </div>
+
+                    <!-- Shuffled Questions Grid -->
+                    <div class="bg-gradient-to-r from-blue-50 via-purple-50 to-green-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-gray-800 mb-3 text-center">🎲 Semua Soal (Diacak)</h4>
+                        <div class="grid grid-cols-10 gap-2" id="shuffledGrid">
+                            <!-- All 40 questions shuffled -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question Detail Modal -->
+        <div id="questionModal" class="fixed inset-0 bg-black/50 modal hidden items-center justify-center z-50">
+            <div class="bg-white rounded-2xl w-[85vw] h-[85vh] max-w-6xl overflow-hidden flex flex-col">
+                <div class="bg-white border-b p-4 rounded-t-2xl flex-shrink-0">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-3">
+                            <span id="questionTypeLabel" class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"></span>
+                            <span id="questionLevelLabel" class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium"></span>
+                            <span id="questionPointsLabel" class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium"></span>
+                            <div class="flex items-center space-x-2">
+                                <label class="text-sm font-medium text-gray-700">Timer:</label>
+                                <select id="questionTimerSelect" class="px-2 py-1 border border-gray-300 rounded text-sm" onchange="updateQuestionTimer()">
+                                    <option value="0">Tanpa Timer</option>
+                                    <option value="10">10 detik</option>
+                                    <option value="30">30 detik</option>
+                                    <option value="60">60 detik</option>
+                                    <option value="90">90 detik</option>
+                                    <option value="120">120 detik</option>
+                                </select>
+                            </div>
+                            <div id="timerDisplay" class="hidden bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">
+                                ⏰ <span id="timerText">00:00</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span id="questionNumber" class="text-sm text-gray-600"></span>
+                            <button onclick="closeQuestionModal()" class="text-gray-500 hover:text-gray-700 p-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-6 flex-1 overflow-y-auto">
+                    <h3 id="questionText" class="text-xl font-semibold text-gray-800 mb-6"></h3>
+                    <div id="questionAnswerArea"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Score Modal -->
+    <div id="scoreModal" class="fixed inset-0 bg-black/50 modal hidden items-center justify-center z-50">
+        <div class="bg-white rounded-2xl p-8 max-w-md mx-4 text-center relative">
+            <button onclick="hideModal('scoreModal')" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 p-1">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div class="text-6xl mb-4">📊</div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Skor Saat Ini</h3>
+            <div class="text-4xl font-bold text-emerald-600 mb-2" id="finalScore">0</div>
+            <p class="text-gray-600 mb-2">dari 40 poin</p>
+            <p class="text-sm text-gray-500 mb-6" id="scoreMessage"></p>
+            <div class="space-y-3">
+                <button onclick="hideModal('scoreModal')" class="w-full bg-emerald-500 text-white py-3 rounded-lg hover:bg-emerald-600 transition-colors">
+                    Lanjutkan Mengerjakan
+                </button>
+                <button onclick="resetProgress()" class="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors">
+                    Reset Progress
+                </button>
+                <button onclick="showMainMenu()" class="w-full bg-gray-500 text-white py-3 rounded-lg hover:bg-gray-600 transition-colors">
+                    Kembali ke Menu
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instructions Modal -->
+    <div id="instructionsModal" class="fixed inset-0 bg-black/50 modal hidden items-center justify-center z-50">
+        <div class="bg-white rounded-2xl p-6 max-w-2xl mx-4 max-h-[80vh] overflow-y-auto">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-gray-800">📋 Petunjuk Bermain</h3>
+                <button onclick="hideModal('instructionsModal')" class="text-gray-500 hover:text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="space-y-4 text-sm text-gray-700">
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h4 class="font-semibold mb-2">🎯 Cara Bermain:</h4>
+                    <ul class="space-y-2">
+                        <li>• Jawab semua 40 soal tentang Asmaul Husna</li>
+                        <li>• Soal terdiri dari 5 jenis: Pilihan Ganda, Benar/Salah, Menjodohkan, Isian, dan Uraian</li>
+                        <li>• Progress akan tersimpan otomatis</li>
+                        <li>• Klik "Lihat Skor" kapan saja untuk melihat nilai</li>
+                    </ul>
+                </div>
+                <div class="bg-emerald-50 p-4 rounded-lg">
+                    <h4 class="font-semibold mb-2">📊 Sistem Penilaian:</h4>
+                    <ul class="space-y-2">
+                        <li>• Pilihan Ganda: 1 poin per soal</li>
+                        <li>• Benar/Salah: 1 poin per soal</li>
+                        <li>• Isian: 1 poin per soal</li>
+                        <li>• Menjodohkan: maksimal 2 poin per soal</li>
+                        <li>• Uraian: maksimal 3 poin per soal</li>
+                    </ul>
+                </div>
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h4 class="font-semibold mb-2">🎲 Fitur Acak:</h4>
+                    <ul class="space-y-2">
+                        <li>• Soal diacak setiap kali memulai</li>
+                        <li>• Urutan soal berbeda untuk setiap sesi</li>
+                        <li>• Total skor maksimal: 35 poin</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="fixed inset-0 bg-black/50 modal hidden items-center justify-center z-50">
+        <div class="bg-white rounded-2xl p-6 max-w-3xl mx-4">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-gray-800">🎥 Video Pembelajaran</h3>
+                <button onclick="hideModal('videoModal')" class="text-gray-500 hover:text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden">
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/embed/aPlg-_Ct4ss?start=8" 
+                    title="Video Pembelajaran Asmaul Husna" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="mt-4 p-3 bg-blue-50 rounded-lg">
+                <p class="text-sm text-blue-800">
+                    <strong>📺 Video Pembelajaran:</strong> Pelajari Asmaul Husna dengan penjelasan yang mudah dipahami
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Material Modal -->
+    <div id="materialModal" class="fixed inset-0 bg-black/50 modal hidden items-center justify-center z-50">
+        <div class="bg-white rounded-2xl p-6 max-w-2xl mx-4 max-h-[80vh] overflow-y-auto">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-gray-800">📖 Materi Bacaan</h3>
+                <button onclick="hideModal('materialModal')" class="text-gray-500 hover:text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="space-y-4 text-sm text-gray-700">
+                <div class="bg-emerald-50 p-4 rounded-lg">
+                    <h4 class="font-semibold mb-2">🕌 Apa itu Asmaul Husna?</h4>
+                    <p>Asmaul Husna adalah 99 nama-nama Allah yang indah dan mulia. Setiap nama memiliki makna yang mendalam dan mengajarkan kita tentang sifat-sifat Allah SWT.</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h4 class="font-semibold mb-2">📚 Contoh Asmaul Husna:</h4>
+                    <ul class="space-y-1">
+                        <li>• <strong>Ar-Rahman</strong> - Yang Maha Pengasih</li>
+                        <li>• <strong>Ar-Rahim</strong> - Yang Maha Penyayang</li>
+                        <li>• <strong>Al-Malik</strong> - Yang Maha Raja</li>
+                        <li>• <strong>Al-Quddus</strong> - Yang Maha Suci</li>
+                        <li>• <strong>As-Sabur</strong> - Yang Maha Sabar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Answers Modal -->
+    <div id="reviewModal" class="fixed inset-0 bg-black/50 modal hidden items-center justify-center z-50">
+        <div class="bg-white rounded-2xl w-[90vw] h-[85vh] max-w-6xl overflow-hidden flex flex-col">
+            <div class="bg-white border-b p-4 rounded-t-2xl flex-shrink-0">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-gray-800">📋 Review Jawaban</h3>
+                    <button onclick="hideModal('reviewModal')" class="text-gray-500 hover:text-gray-700 p-1">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="p-6 flex-1 overflow-y-auto" id="reviewContent">
+                <!-- Review content will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Objectives Modal -->
+    <div id="objectivesModal" class="fixed inset-0 bg-black/50 modal hidden items-center justify-center z-50">
+        <div class="bg-white rounded-2xl p-6 max-w-2xl mx-4 max-h-[80vh] overflow-y-auto">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-gray-800">🎯 Tujuan Pembelajaran</h3>
+                <button onclick="hideModal('objectivesModal')" class="text-gray-500 hover:text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="space-y-4 text-sm text-gray-700">
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h4 class="font-semibold mb-2">Setelah mempelajari materi ini, siswa diharapkan dapat:</h4>
+                    <ul class="space-y-2">
+                        <li>✅ Mengenal dan memahami makna Asmaul Husna</li>
+                        <li>✅ Menyebutkan minimal 20 nama dari Asmaul Husna</li>
+                        <li>✅ Menjelaskan arti dari nama-nama Allah yang dipelajari</li>
+                        <li>✅ Mengaplikasikan nilai-nilai Asmaul Husna dalam kehidupan sehari-hari</li>
+                        <li>✅ Meningkatkan keimanan dan ketakwaan kepada Allah SWT</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reset Confirmation Modal -->
+    <div id="resetConfirmModal" class="fixed inset-0 bg-black/50 modal hidden items-center justify-center z-50">
+        <div class="bg-white rounded-2xl p-8 max-w-md mx-4 text-center relative">
+            <button onclick="hideModal('resetConfirmModal')" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 p-1">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div class="text-6xl mb-4">⚠️</div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Konfirmasi Reset</h3>
+            <p class="text-gray-600 mb-6">Yakin ingin menghapus semua progress? Data tidak dapat dikembalikan.</p>
+            <div class="space-y-3">
+                <button onclick="confirmReset()" class="w-full bg-red-500 text-white py-3 rounded-lg hover:bg-red-600 transition-colors font-medium">
+                    🗑️ Ya, Reset Semua
+                </button>
+                <button onclick="hideModal('resetConfirmModal')" class="w-full bg-gray-500 text-white py-3 rounded-lg hover:bg-gray-600 transition-colors font-medium">
+                    ❌ Batal
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Quiz Data
+        const quizData = [
+            // Pilihan Ganda (15 soal) - 1 poin
+            {
+                id: 1,
+                type: 'multiple_choice',
+                level: 1,
+                question: 'Pengertian Asmaul Husna yang paling tepat adalah...',
+                options: ['Nama-nama Allah yang mencerminkan kehendak-Nya dan terdapat dalam kitab-kitab Allah', 'Nama-nama lain Allah yang disampaikan kepada Nabi Muhammad dan terdapat pada kitab-kitab Allah', 'Nama-nama indah Allah yang mencerminkan sifat-sifat-Nya dan terdapat di dalam Al-Qur\'an', 'Nama-nama lain Allah yang menunjukkan kekuatan-Nya dan terdapat dalam kitab-kitab Allah'],
+                correct: 2,
+                points: 1
+            },
+            {
+                id: 2,
+                type: 'multiple_choice',
+                level: 1,
+                question: 'Pasangan asmaul husna dan arti yang tepat terdapat pada kolom nomor dan huruf....<br><br><table class="w-full border-collapse border border-gray-300 mt-4"><thead><tr class="bg-gray-100"><th class="border border-gray-300 p-2">No.</th><th class="border border-gray-300 p-2">Asmaul Husna</th><th class="border border-gray-300 p-2">Huruf</th><th class="border border-gray-300 p-2">Arti</th></tr></thead><tbody><tr><td class="border border-gray-300 p-2 text-center">1</td><td class="border border-gray-300 p-2">Al-Muhyi</td><td class="border border-gray-300 p-2 text-center">a</td><td class="border border-gray-300 p-2">Yang Maha Mematikan</td></tr><tr><td class="border border-gray-300 p-2 text-center">2</td><td class="border border-gray-300 p-2">Al-Qayyum</td><td class="border border-gray-300 p-2 text-center">b</td><td class="border border-gray-300 p-2">Yang Maha Menghidupkan</td></tr><tr><td class="border border-gray-300 p-2 text-center">3</td><td class="border border-gray-300 p-2">Al-Mu\'mit</td><td class="border border-gray-300 p-2 text-center">c</td><td class="border border-gray-300 p-2">Yang Maha Kuat</td></tr><tr><td class="border border-gray-300 p-2 text-center">4</td><td class="border border-gray-300 p-2">Al-Qawiyyu</td><td class="border border-gray-300 p-2 text-center">d</td><td class="border border-gray-300 p-2">Yang Maha Berdiri Sendiri</td></tr></tbody></table>',
+                options: ['1-b; 2-a; dan 3-d', '1-b; 2-c; dan 3-a', '2-d; 3-a; dan 4-b', '2-d; 3-a; dan 4-c'],
+                correct: 3,
+                points: 1
+            },
+            {
+                id: 3,
+                type: 'multiple_choice',
+                level: 1,
+                question: 'Ketika tsunami menerjang di Palu, Sulawesi Tengah, banyak orang yang tergulung ombak hingga ke tengah lautan. Peristiwa ini mengakibatkan ribuan nyawa melayang. Namun saat peristiwa tersebut, ada beberapa orang yang masih bisa bertahan hidup dan selamat dari maut.<br><br>Asmaul husna yang tepat sesuai dengan peristiwa tersebut adalah...',
+                options: ['Al-Muhyi dan Al-Qayyum', 'Al-Qayyum dan Al-Qawiyyu', 'Al-Mu\'mit dan Al-Muhyi', 'Al-Qawiyyu dan Al-Mu\'mit'],
+                correct: 2,
+                points: 1
+            },
+            {
+                id: 4,
+                type: 'multiple_choice',
+                level: 2,
+                question: 'Berikut ini cara mengenal Allah lebih dekat, kecuali...',
+                options: ['Merenungkan ciptaan-Nya untuk dijadikan inspirasi', 'Mengenal nama-nama indah Allah atau asmaul husna', 'Mempelajari kitab suci Al-Qur\'an', 'Menunggu teman mengajak shalat berjamaah'],
+                correct: 3,
+                points: 1
+            },
+            {
+                id: 5,
+                type: 'multiple_choice',
+                level: 2,
+                question: 'Seorang hamba Allah ini terlihat sehat walafiat karena dia menjaga pola makan, minum, olahraga teratur, dan istirahat yang cukup. Namun tiba-tiba selesai berolahraga badannya merasa panas lalu meninggal dunia.<br><br>Pernyataan di atas menunjukkan bahwa Allah memiliki sifat...',
+                options: ['Al-Mu\'mit', 'Al-Qayyum', 'Al-Qawiyyu', 'Al-Muhyi'],
+                correct: 0,
+                points: 1
+            },
+            {
+                id: 6,
+                type: 'multiple_choice',
+                level: 2,
+                question: 'Jika ada teman yang malas belajar, kalian harus berusaha membangkitkan semangat dan mengajaknya supaya bangkit dari malas.<br><br>Pernyataan di atas merupakan bukti meneladani asmaul husna yaitu...',
+                options: ['Al-Mu\'mit', 'Al-Baits', 'Al-Qayyum', 'Al-Muhyi'],
+                correct: 1,
+                points: 1
+            },
+            {
+                id: 7,
+                type: 'multiple_choice',
+                level: 2,
+                question: 'Perhatikan beberapa keteladanan asmaul husna berikut!<br><br><div class="overflow-x-auto"><table class="w-full border-2 border-gray-400 mt-4 bg-white shadow-md rounded-lg"><thead><tr class="bg-blue-100"><th class="border-2 border-gray-400 p-3 text-blue-800 font-bold">No.</th><th class="border-2 border-gray-400 p-3 text-blue-800 font-bold">Keteladanan</th></tr></thead><tbody><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3 text-center font-bold text-red-600">1</td><td class="border-2 border-gray-400 p-3">Memberikan semangat kepada teman-teman yang malas</td></tr><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3 text-center font-bold text-red-600">2</td><td class="border-2 border-gray-400 p-3">Mensyukuri nikmat hidup dengan memperbanyak amal baik</td></tr><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3 text-center font-bold text-red-600">3</td><td class="border-2 border-gray-400 p-3">Tidak tergantung kepada orang lain</td></tr><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3 text-center font-bold text-red-600">4</td><td class="border-2 border-gray-400 p-3">Merapikan dan menyiapkan perlengkapan sekolah sendiri</td></tr></tbody></table></div><br>Yang menunjukkan sikap meneladani asmaul husna Al-Qayyum terdapat pada...',
+                options: ['1 dan 2', '1 dan 3', '2 dan 4', '3 dan 4'],
+                correct: 3,
+                points: 1
+            },
+            {
+                id: 8,
+                type: 'multiple_choice',
+                level: 3,
+                question: 'Allah Maha Kuat, kekuatan-Nya tidak terbatas dan kekuatan-Nya mampu mengurus alam sendiri, tanpa bantuan siapapun. Asmaul husna yang tepat adalah...',
+                options: ['Al-Mu\'mit', 'Al-Muhyi', 'Al-Qawiyyu', 'Al-Baits'],
+                correct: 2,
+                points: 1
+            },
+            {
+                id: 9,
+                type: 'multiple_choice',
+                level: 3,
+                question: 'Perhatikan Q.S. Al-Baqarah: 255 berikut! "Allahu laa ilaaha illaa huwa al-Qayyum." Ayat tersebut menunjukkan asmaul husna...',
+                options: ['Al-Qayyum', 'Al-Mu\'mit', 'Al-Baits', 'Al-Muhyi'],
+                correct: 0,
+                points: 1
+            },
+            {
+                id: 10,
+                type: 'multiple_choice',
+                level: 3,
+                question: 'Berikut ini yang merupakan manifestasi dari asmaul husna Al-Muhyi adalah...',
+                options: ['Allah menghidupkan bayi dalam kandungan', 'Allah akan membangkitkan manusia dari alam kubur', 'Allah Maha menguasai seluruh alam semesta', 'Allah akan menumbuhkan rumput-rumputan yang telah kering'],
+                correct: 0,
+                points: 1
+            },
+            {
+                id: 11,
+                type: 'multiple_choice',
+                level: 1,
+                question: 'Asmaul Husna Al-Muhyi berkaitan erat dengan konsep...',
+                options: ['Kehidupan dan kelahiran', 'Kematian dan kehancuran', 'Kekuatan dan kekuasaan', 'Kemandirian dan keberdirian'],
+                correct: 0,
+                points: 1
+            },
+            {
+                id: 12,
+                type: 'multiple_choice',
+                level: 2,
+                question: 'Sifat Allah yang menunjukkan bahwa Dia tidak membutuhkan bantuan siapapun disebut...',
+                options: ['Al-Qayyum', 'Al-Qawiyyu', 'Al-Muhyi', 'Al-Baits'],
+                correct: 0,
+                points: 1
+            },
+            {
+                id: 13,
+                type: 'multiple_choice',
+                level: 2,
+                question: 'Ayat Al-Qur\'an yang menyebutkan sifat Al-Qayyum terdapat dalam surah...',
+                options: ['Al-Baqarah ayat 255', 'Al-Ikhlas ayat 1-4', 'Al-Fatihah ayat 1-7', 'Yasin ayat 82'],
+                correct: 0,
+                points: 1
+            },
+            {
+                id: 14,
+                type: 'multiple_choice',
+                level: 3,
+                question: 'Meneladani Al-Muhyi dalam kehidupan sehari-hari dapat dilakukan dengan cara...',
+                options: ['Memberikan semangat dan harapan kepada orang yang putus asa', 'Menerima kematian dengan ikhlas', 'Mengembangkan kekuatan fisik dan mental', 'Belajar mandiri tanpa bantuan orang lain'],
+                correct: 0,
+                points: 1
+            },
+            {
+                id: 15,
+                type: 'multiple_choice',
+                level: 3,
+                question: 'Al-Mu\'mit dan Al-Muhyi merupakan dua sifat Allah yang...',
+                options: ['Saling melengkapi dan berpasangan', 'Bertentangan satu sama lain', 'Hanya berlaku di hari kiamat', 'Tidak relevan dengan kehidupan manusia'],
+                correct: 0,
+                points: 1
+            },
+
+            // Benar/Salah (5 soal)
+            {
+                id: 16,
+                type: 'true_false',
+                level: 1,
+                question: 'Al-Muhyi berarti Allah Maha Mematikan.',
+                correct: false,
+                points: 1
+            },
+            {
+                id: 17,
+                type: 'true_false',
+                level: 2,
+                question: 'Al-Mu\'mit dan Al-Muhyi adalah dua sifat Allah yang saling melengkapi.',
+                correct: true,
+                points: 1
+            },
+            {
+                id: 18,
+                type: 'true_false',
+                level: 2,
+                question: 'Mandiri dalam belajar adalah bentuk meneladani Al-Qayyum.',
+                correct: true,
+                points: 1
+            },
+            {
+                id: 19,
+                type: 'true_false',
+                level: 3,
+                question: 'Al-Qawiyyu berarti Allah lemah tanpa bantuan makhluk-Nya.',
+                correct: false,
+                points: 1
+            },
+            {
+                id: 20,
+                type: 'true_false',
+                level: 3,
+                question: 'Al-Baits berkaitan dengan kebangkitan manusia di hari kiamat.',
+                correct: true,
+                points: 1
+            },
+
+            // Menjodohkan (5 soal)
+            {
+                id: 21,
+                type: 'matching',
+                level: 2,
+                question: 'Pasangkan pernyataan di kolom A dengan kolom B!<br><br><div class="overflow-x-auto"><table class="w-full border-2 border-gray-400 mt-4 bg-white shadow-md rounded-lg"><thead><tr class="bg-blue-100"><th class="border-2 border-gray-400 p-3 text-blue-800 font-bold">Kolom A</th><th class="border-2 border-gray-400 p-3 text-blue-800 font-bold">Kolom B</th></tr></thead><tbody><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3">a) Al-Muhyi</td><td class="border-2 border-gray-400 p-3">1. Yang Maha Berdiri Sendiri</td></tr><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3">b) Al-Mu\'mit</td><td class="border-2 border-gray-400 p-3">2. Yang Maha Menghidupkan</td></tr><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3">c) Al-Qayyum</td><td class="border-2 border-gray-400 p-3">3. Yang Maha Mematikan</td></tr></tbody></table></div><br><p class="text-sm text-gray-600">Jawab dengan format: a-2, b-3, c-1</p>',
+                pairs: [
+                    { left: 'Al-Muhyi', right: 'Yang Maha Menghidupkan' },
+                    { left: 'Al-Mu\'mit', right: 'Yang Maha Mematikan' },
+                    { left: 'Al-Qayyum', right: 'Yang Maha Berdiri Sendiri' }
+                ],
+                points: 2
+            },
+            {
+                id: 22,
+                type: 'matching',
+                level: 2,
+                question: 'Pasangkan pernyataan di kolom A dengan kolom B!<br><br><div class="overflow-x-auto"><table class="w-full border-2 border-gray-400 mt-4 bg-white shadow-md rounded-lg"><thead><tr class="bg-blue-100"><th class="border-2 border-gray-400 p-3 text-blue-800 font-bold">Kolom A</th><th class="border-2 border-gray-400 p-3 text-blue-800 font-bold">Kolom B</th></tr></thead><tbody><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3">a) Meyakini hidup dan mati di tangan Allah</td><td class="border-2 border-gray-400 p-3">1. Meneladani Al-Baits</td></tr><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3">b) Tidak bergantung pada orang lain dalam hal tanggung jawab</td><td class="border-2 border-gray-400 p-3">2. Meneladani Al-Muhyi dan Al-Mu\'mit</td></tr><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3">c) Bangkit dari rasa putus asa</td><td class="border-2 border-gray-400 p-3">3. Meneladani Al-Qayyum</td></tr></tbody></table></div><br><p class="text-sm text-gray-600">Jawab dengan format: a-2, b-3, c-1</p>',
+                pairs: [
+                    { left: 'Meyakini hidup dan mati di tangan Allah', right: 'Meneladani Al-Muhyi dan Al-Mu\'mit' },
+                    { left: 'Tidak bergantung pada orang lain dalam hal tanggung jawab', right: 'Meneladani Al-Qayyum' },
+                    { left: 'Bangkit dari rasa putus asa', right: 'Meneladani Al-Baits' }
+                ],
+                points: 2
+            },
+            {
+                id: 23,
+                type: 'matching',
+                level: 3,
+                question: 'Pasangkan asmaul husna dengan artinya!<br><br><div class="overflow-x-auto"><table class="w-full border-2 border-gray-400 mt-4 bg-white shadow-md rounded-lg"><thead><tr class="bg-blue-100"><th class="border-2 border-gray-400 p-3 text-blue-800 font-bold">Asmaul Husna</th><th class="border-2 border-gray-400 p-3 text-blue-800 font-bold">Arti</th></tr></thead><tbody><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3">a) Al-Qawiyyu</td><td class="border-2 border-gray-400 p-3">1. Yang Maha Kuat</td></tr><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3">b) Al-Baits</td><td class="border-2 border-gray-400 p-3">2. Yang Maha Membangkitkan</td></tr><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3">c) Al-Muhyi</td><td class="border-2 border-gray-400 p-3">3. Yang Maha Menghidupkan</td></tr></tbody></table></div><br><p class="text-sm text-gray-600">Jawab dengan format: a-1, b-2, c-3</p>',
+                pairs: [
+                    { left: 'Al-Qawiyyu', right: 'Yang Maha Kuat' },
+                    { left: 'Al-Baits', right: 'Yang Maha Membangkitkan' },
+                    { left: 'Al-Muhyi', right: 'Yang Maha Menghidupkan' }
+                ],
+                points: 2
+            },
+            {
+                id: 24,
+                type: 'matching',
+                level: 3,
+                question: 'Pasangkan sikap dengan asmaul husna yang diteladani!<br><br><div class="overflow-x-auto"><table class="w-full border-2 border-gray-400 mt-4 bg-white shadow-md rounded-lg"><thead><tr class="bg-blue-100"><th class="border-2 border-gray-400 p-3 text-blue-800 font-bold">Sikap</th><th class="border-2 border-gray-400 p-3 text-blue-800 font-bold">Asmaul Husna</th></tr></thead><tbody><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3">a) Belajar mandiri</td><td class="border-2 border-gray-400 p-3">1. Al-Qayyum</td></tr><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3">b) Memberi semangat kepada teman</td><td class="border-2 border-gray-400 p-3">2. Al-Muhyi</td></tr><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3">c) Menerima kematian dengan ikhlas</td><td class="border-2 border-gray-400 p-3">3. Al-Mu\'mit</td></tr></tbody></table></div><br><p class="text-sm text-gray-600">Jawab dengan format: a-1, b-2, c-3</p>',
+                pairs: [
+                    { left: 'Belajar mandiri', right: 'Al-Qayyum' },
+                    { left: 'Memberi semangat kepada teman', right: 'Al-Muhyi' },
+                    { left: 'Menerima kematian dengan ikhlas', right: 'Al-Mu\'mit' }
+                ],
+                points: 2
+            },
+            {
+                id: 25,
+                type: 'matching',
+                level: 1,
+                question: 'Pasangkan ayat dengan asmaul husna yang sesuai!<br><br><div class="overflow-x-auto"><table class="w-full border-2 border-gray-400 mt-4 bg-white shadow-md rounded-lg"><thead><tr class="bg-blue-100"><th class="border-2 border-gray-400 p-3 text-blue-800 font-bold">Ayat</th><th class="border-2 border-gray-400 p-3 text-blue-800 font-bold">Asmaul Husna</th></tr></thead><tbody><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3">a) "Allahu laa ilaaha illaa huwa al-Qayyum"</td><td class="border-2 border-gray-400 p-3">1. Al-Qayyum</td></tr><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3">b) "Innahu huwa yuhyi wa yumit"</td><td class="border-2 border-gray-400 p-3">2. Al-Muhyi dan Al-Mu\'mit</td></tr><tr class="hover:bg-gray-50"><td class="border-2 border-gray-400 p-3">c) "Wa Huwa al-Qawiyy al-Aziz"</td><td class="border-2 border-gray-400 p-3">3. Al-Qawiyyu</td></tr></tbody></table></div><br><p class="text-sm text-gray-600">Jawab dengan format: a-1, b-2, c-3</p>',
+                pairs: [
+                    { left: '"Allahu laa ilaaha illaa huwa al-Qayyum"', right: 'Al-Qayyum' },
+                    { left: '"Innahu huwa yuhyi wa yumit"', right: 'Al-Muhyi dan Al-Mu\'mit' },
+                    { left: '"Wa Huwa al-Qawiyy al-Aziz"', right: 'Al-Qawiyyu' }
+                ],
+                points: 2
+            },
+
+            // Isian (10 soal)
+            {
+                id: 26,
+                type: 'fill_blank',
+                level: 1,
+                question: 'Nama Allah yang berarti "Yang Maha Menghidupkan" adalah ______________.',
+                correct: ['Al-Muhyi'],
+                points: 1
+            },
+            {
+                id: 27,
+                type: 'fill_blank',
+                level: 1,
+                question: 'Ketika seseorang meninggal, itu menunjukkan kekuasaan Allah sebagai ______________.',
+                correct: ['Al-Mu\'mit'],
+                points: 1
+            },
+            {
+                id: 28,
+                type: 'fill_blank',
+                level: 1,
+                question: 'Sifat Allah yang tidak bergantung pada siapa pun disebut ______________.',
+                correct: ['Al-Qayyum'],
+                points: 1
+            },
+            {
+                id: 29,
+                type: 'fill_blank',
+                level: 2,
+                question: 'Allah akan membangkitkan manusia dari kubur sesuai asmaul husna ______________.',
+                correct: ['Al-Baits'],
+                points: 1
+            },
+            {
+                id: 30,
+                type: 'fill_blank',
+                level: 2,
+                question: 'Kekuatan Allah yang tak terbatas tercermin dalam asmaul husna ______________.',
+                correct: ['Al-Qawiyyu'],
+                points: 1
+            },
+            {
+                id: 31,
+                type: 'fill_blank',
+                level: 2,
+                question: 'Meyakini bahwa Allah memiliki nama-nama indah yang disebut ______________.',
+                correct: ['Asmaul Husna'],
+                points: 1
+            },
+            {
+                id: 32,
+                type: 'fill_blank',
+                level: 3,
+                question: 'Allah berkehendak menyelamatkan dan menghidupkan orang yang terkena musibah, karena Allah memiliki nama ______________.',
+                correct: ['Al-Muhyi'],
+                points: 1
+            },
+            {
+                id: 33,
+                type: 'fill_blank',
+                level: 3,
+                question: 'Andi bersemangat dan tergugah hatinya untuk senantiasa belajar, Andi meyakini ini adalah kehendak Allah yang Maha ______________.',
+                correct: ['Al-Baits'],
+                points: 1
+            },
+            {
+                id: 34,
+                type: 'fill_blank',
+                level: 3,
+                question: 'Tuliskan dua peristiwa yang berhubungan dengan asmaul husna Al-Mu\'mit! (Contoh jawaban)',
+                correct: ['Kematian karena kecelakaan dan bencana alam'],
+                points: 1
+            },
+            {
+                id: 35,
+                type: 'fill_blank',
+                level: 2,
+                question: 'Tuliskan dua sikap yang mencerminkan meneladani asmaul husna Al-Qayyum! (Contoh jawaban)',
+                correct: ['Tidak bergantung pada orang lain dan mandiri'],
+                points: 1
+            },
+
+            // Uraian (5 soal)
+            {
+                id: 36,
+                type: 'essay',
+                level: 2,
+                question: 'Jelaskan perbedaan antara Al-Muhyi dan Al-Baits!',
+                points: 3
+            },
+            {
+                id: 37,
+                type: 'essay',
+                level: 3,
+                question: 'Mengapa penting meneladani Al-Qayyum dalam kehidupan sehari-hari? Beri contoh!',
+                points: 3
+            },
+            {
+                id: 38,
+                type: 'essay',
+                level: 3,
+                question: 'Ceritakan kejadian nyata yang menunjukkan kekuasaan Al-Mu\'mit dan Al-Muhyi sekaligus!',
+                points: 3
+            },
+            {
+                id: 39,
+                type: 'essay',
+                level: 2,
+                question: 'Bagaimana cara meneladani Al-Muhyi dalam kehidupan sehari-hari?',
+                points: 3
+            },
+            {
+                id: 40,
+                type: 'essay',
+                level: 3,
+                question: 'Jelaskan hubungan antara Al-Qayyum dan kemandirian dalam belajar!',
+                points: 3
+            }
+        ];
+
+        // State Management
+        let currentQuestionIndex = 0;
+        let userAnswers = {};
+        let totalScore = 0;
+        let timerInterval = null;
+        let currentTimer = 0;
+        let timerSetting = 0;
+        let isTimerActive = false;
+        let shuffledQuizData = [];
+        let rouletteInterval = null;
+        let isRouletteSpinning = false;
+        
+        // Shuffle function
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+        
+        // Audio Context for sound effects
+        let audioContext = null;
+        
+        // Initialize audio context
+        function initAudioContext() {
+            if (!audioContext) {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            }
+        }
+        
+        // Play tick sound
+        function playTickSound() {
+            if (!audioContext) return;
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+            
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+            
+            oscillator.frequency.setValueAtTime(800, audioContext.currentTime);
+            gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+            
+            oscillator.start(audioContext.currentTime);
+            oscillator.stop(audioContext.currentTime + 0.1);
+        }
+        
+        // Play alarm sound
+        function playAlarmSound() {
+            if (!audioContext) return;
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+            
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+            
+            oscillator.frequency.setValueAtTime(400, audioContext.currentTime);
+            oscillator.frequency.setValueAtTime(800, audioContext.currentTime + 0.5);
+            oscillator.frequency.setValueAtTime(400, audioContext.currentTime + 1);
+            
+            gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 2);
+            
+            oscillator.start(audioContext.currentTime);
+            oscillator.stop(audioContext.currentTime + 2);
+        }
+
+        // Timer functions
+        
+        function startTimer() {
+            if (timerSetting === 0) return;
+            
+            initAudioContext();
+            currentTimer = timerSetting;
+            isTimerActive = true;
+            
+            document.getElementById('timerDisplay').classList.remove('hidden');
+            updateTimerDisplay();
+            
+            timerInterval = setInterval(() => {
+                currentTimer--;
+                updateTimerDisplay();
+                
+                if (currentTimer > 0) {
+                    playTickSound();
+                }
+                
+                if (currentTimer <= 10 && currentTimer > 0) {
+                    document.getElementById('timerDisplay').className = 'bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium timer-critical';
+                } else if (currentTimer <= 30 && currentTimer > 10) {
+                    document.getElementById('timerDisplay').className = 'bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium timer-warning';
+                }
+                
+                if (currentTimer <= 0) {
+                    timeUp();
+                }
+            }, 1000);
+        }
+        
+        function stopTimer() {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+            isTimerActive = false;
+            document.getElementById('timerDisplay').classList.add('hidden');
+        }
+        
+        function updateTimerDisplay() {
+            const minutes = Math.floor(currentTimer / 60);
+            const seconds = currentTimer % 60;
+            document.getElementById('timerText').textContent = 
+                `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+        
+        function timeUp() {
+            stopTimer();
+            playAlarmSound();
+            
+            const question = shuffledQuizData[currentQuestionIndex];
+            
+            // Auto-submit for multiple choice and true/false if answer is selected
+            if ((question.type === 'multiple_choice' || question.type === 'true_false')) {
+                const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+                if (selectedAnswer) {
+                    // Lock the selected answer
+                    const answer = selectedAnswer.value === 'true' ? true : 
+                                  selectedAnswer.value === 'false' ? false : 
+                                  parseInt(selectedAnswer.value);
+                    
+                    userAnswers[question.id] = answer;
+                    userAnswers[question.id + '_submitted'] = true;
+                    userAnswers[question.id + '_locked'] = true;
+                    
+                    calculateScore();
+                    saveProgress();
+                    
+                    // Refresh display
+                    document.getElementById('questionAnswerArea').innerHTML = generateAnswerArea(question);
+                    initializeQuestionPocket();
+                    
+                    alert('⏰ Waktu habis! Jawaban yang dipilih telah dikunci.');
+                } else {
+                    // Mark as wrong if no answer selected
+                    userAnswers[question.id] = null;
+                    userAnswers[question.id + '_submitted'] = true;
+                    userAnswers[question.id + '_locked'] = true;
+                    
+                    calculateScore();
+                    saveProgress();
+                    
+                    // Refresh display
+                    document.getElementById('questionAnswerArea').innerHTML = generateAnswerArea(question);
+                    initializeQuestionPocket();
+                    
+                    alert('⏰ Waktu habis! Soal dikunci karena tidak ada jawaban yang dipilih.');
+                }
+            } else {
+                // For other question types, just lock them
+                userAnswers[question.id + '_locked'] = true;
+                
+                // Refresh display
+                document.getElementById('questionAnswerArea').innerHTML = generateAnswerArea(question);
+                initializeQuestionPocket();
+                
+                alert('⏰ Waktu habis! Soal telah dikunci.');
+            }
+        }
+
+        // Load saved progress
+        function loadProgress() {
+            const saved = localStorage.getItem('asmaulHusnaProgress');
+            if (saved) {
+                const data = JSON.parse(saved);
+                currentQuestionIndex = data.currentQuestionIndex || 0;
+                userAnswers = data.userAnswers || {};
+                totalScore = data.totalScore || 0;
+                timerSetting = data.timerSetting || 0;
+                shuffledQuizData = data.shuffledQuizData || [];
+            }
+            
+            // If no shuffled data exists or it's empty, create new shuffle
+            if (shuffledQuizData.length === 0) {
+                shuffledQuizData = shuffleArray(quizData);
+            }
+        }
+
+        // Save progress
+        function saveProgress() {
+            const data = {
+                currentQuestionIndex,
+                userAnswers,
+                totalScore,
+                timerSetting,
+                shuffledQuizData
+            };
+            localStorage.setItem('asmaulHusnaProgress', JSON.stringify(data));
+        }
+
+        // Reset progress
+        function resetProgress() {
+            showModal('resetConfirmModal');
+        }
+        
+        function confirmReset() {
+            stopTimer();
+            localStorage.removeItem('asmaulHusnaProgress');
+            currentQuestionIndex = 0;
+            userAnswers = {};
+            totalScore = 0;
+            timerSetting = 0;
+            shuffledQuizData = shuffleArray(quizData); // Create new shuffle
+            
+            if (document.getElementById('quizInterface').classList.contains('hidden')) {
+                showMainMenu();
+            } else {
+                initializeQuestionPocket();
+                updateUI();
+            }
+            hideModal('scoreModal');
+            hideModal('questionModal');
+            hideModal('resetConfirmModal');
+        }
+
+        // Show/Hide functions
+        function showMainMenu() {
+            document.getElementById('mainMenu').classList.remove('hidden');
+            document.getElementById('quizInterface').classList.add('hidden');
+            hideModal('questionModal');
+        }
+
+        function startQuiz() {
+            loadProgress();
+            document.getElementById('mainMenu').classList.add('hidden');
+            document.getElementById('quizInterface').classList.remove('hidden');
+            initializeQuestionPocket();
+            updateUI();
+        }
+
+        // Initialize Question Pocket
+        function initializeQuestionPocket() {
+            // Shuffled Questions Grid (All 40 questions)
+            const shuffledGrid = document.getElementById('shuffledGrid');
+            shuffledGrid.innerHTML = '';
+            
+            for (let i = 0; i < shuffledQuizData.length; i++) {
+                shuffledGrid.appendChild(createQuestionButton(i));
+            }
+        }
+
+        function createQuestionButton(questionIndex) {
+            const button = document.createElement('button');
+            const questionNumber = questionIndex + 1;
+            const question = shuffledQuizData[questionIndex];
+            
+            // Add question type icon
+            const typeIcons = {
+                'multiple_choice': '📝',
+                'true_false': '✓',
+                'matching': '🔗',
+                'fill_blank': '✏️',
+                'essay': '📄'
+            };
+            
+            button.innerHTML = `<div class="text-xs">${typeIcons[question.type]}</div><div class="text-sm font-bold">${questionNumber}</div>`;
+            button.className = 'w-12 h-12 rounded-lg font-medium transition-all duration-200 hover:scale-105 flex flex-col items-center justify-center';
+            button.onclick = () => openQuestion(questionIndex);
+            
+            // Set button style based on answer status
+            updateQuestionButtonStyle(button, questionIndex);
+            
+            return button;
+        }
+
+        function updateQuestionButtonStyle(button, questionIndex) {
+            const question = shuffledQuizData[questionIndex];
+            const hasAnswer = userAnswers[question.id] !== undefined;
+            const isSubmitted = userAnswers[question.id + '_submitted'] === true;
+            const isActive = questionIndex === currentQuestionIndex;
+            
+            // Check if answer is correct for submitted questions
+            let isCorrect = false;
+            if (isSubmitted && hasAnswer) {
+                switch (question.type) {
+                    case 'multiple_choice':
+                    case 'true_false':
+                        isCorrect = userAnswers[question.id] === question.correct;
+                        break;
+                    case 'fill_blank':
+                        const manualScoreFillBtn = userAnswers[question.id + '_manual_score'] || 0;
+                        isCorrect = manualScoreFillBtn === question.points;
+                        break;
+                    case 'matching':
+                        const manualScoreMatchBtn = userAnswers[question.id + '_manual_score'] || 0;
+                        isCorrect = manualScoreMatchBtn === question.points;
+                        break;
+                    case 'essay':
+                        const manualScore = userAnswers[question.id + '_manual_score'] || 0;
+                        isCorrect = manualScore === question.points;
+                        break;
+                }
+            }
+            
+            if (isActive) {
+                button.className = 'w-12 h-12 rounded-lg font-medium transition-all duration-200 hover:scale-105 flex flex-col items-center justify-center bg-blue-500 text-white border-2 border-blue-700';
+            } else if (isSubmitted) {
+                if (isCorrect) {
+                    button.className = 'w-12 h-12 rounded-lg font-medium transition-all duration-200 hover:scale-105 flex flex-col items-center justify-center bg-green-500 text-white hover:bg-green-600';
+                } else {
+                    button.className = 'w-12 h-12 rounded-lg font-medium transition-all duration-200 hover:scale-105 flex flex-col items-center justify-center bg-red-500 text-white hover:bg-red-600';
+                }
+            } else if (hasAnswer) {
+                button.className = 'w-12 h-12 rounded-lg font-medium transition-all duration-200 hover:scale-105 flex flex-col items-center justify-center bg-purple-500 text-white hover:bg-purple-600';
+            } else {
+                button.className = 'w-12 h-12 rounded-lg font-medium transition-all duration-200 hover:scale-105 flex flex-col items-center justify-center bg-gray-200 text-gray-700 hover:bg-gray-300';
+            }
+        }
+
+        function openQuestion(questionIndex) {
+            stopTimer(); // Stop any existing timer
+            
+            currentQuestionIndex = questionIndex;
+            const question = shuffledQuizData[questionIndex];
+            
+            // Update modal content
+            document.getElementById('questionTypeLabel').textContent = getQuestionTypeLabel(question.type);
+            document.getElementById('questionLevelLabel').textContent = `Level ${question.level}`;
+            document.getElementById('questionPointsLabel').textContent = `${question.points} poin`;
+            document.getElementById('questionText').innerHTML = question.question;
+            document.getElementById('questionNumber').textContent = `Soal ${questionIndex + 1} dari ${shuffledQuizData.length}`;
+            
+            // Set timer based on question type
+            const questionTimerSelect = document.getElementById('questionTimerSelect');
+            let defaultTimer = 0;
+            switch(question.type) {
+                case 'multiple_choice':
+                case 'true_false':
+                    defaultTimer = 30;
+                    break;
+                case 'fill_blank':
+                    defaultTimer = 60;
+                    break;
+                case 'matching':
+                    defaultTimer = 90;
+                    break;
+                case 'essay':
+                    defaultTimer = 120;
+                    break;
+            }
+            questionTimerSelect.value = defaultTimer;
+            timerSetting = defaultTimer;
+            
+            // Generate answer area
+            document.getElementById('questionAnswerArea').innerHTML = generateAnswerArea(question);
+            
+            // Load saved answer if exists
+            if (userAnswers[question.id]) {
+                loadSavedAnswer(question);
+            }
+            
+            // Show modal
+            showModal('questionModal');
+            
+            // Start timer if not submitted and not locked
+            const isSubmitted = userAnswers[question.id + '_submitted'];
+            const isLocked = userAnswers[question.id + '_locked'];
+            
+            if (!isSubmitted && !isLocked && timerSetting > 0) {
+                startTimer();
+            }
+            
+            // Update pocket display
+            initializeQuestionPocket();
+            updateUI();
+            saveProgress();
+        }
+        
+        function closeQuestionModal() {
+            stopTimer();
+            hideModal('questionModal');
+        }
+        
+        function updateQuestionTimer() {
+            const newTimerSetting = parseInt(document.getElementById('questionTimerSelect').value);
+            
+            // If timer is currently running, ask for confirmation
+            if (isTimerActive && newTimerSetting !== timerSetting) {
+                if (confirm('Timer sedang berjalan. Yakin ingin mengubah pengaturan timer?')) {
+                    stopTimer();
+                    timerSetting = newTimerSetting;
+                    
+                    const question = quizData[currentQuestionIndex];
+                    const isSubmitted = userAnswers[question.id + '_submitted'];
+                    const isLocked = userAnswers[question.id + '_locked'];
+                    
+                    if (!isSubmitted && !isLocked && timerSetting > 0) {
+                        startTimer();
+                    }
+                } else {
+                    // Reset to previous value
+                    document.getElementById('questionTimerSelect').value = timerSetting;
+                }
+            } else {
+                timerSetting = newTimerSetting;
+                
+                const question = quizData[currentQuestionIndex];
+                const isSubmitted = userAnswers[question.id + '_submitted'];
+                const isLocked = userAnswers[question.id + '_locked'];
+                
+                if (!isSubmitted && !isLocked && timerSetting > 0) {
+                    startTimer();
+                }
+            }
+        }
+
+
+
+        function showModal(modalId) {
+            document.getElementById(modalId).classList.remove('hidden');
+            document.getElementById(modalId).classList.add('flex');
+        }
+
+        function hideModal(modalId) {
+            document.getElementById(modalId).classList.add('hidden');
+            document.getElementById(modalId).classList.remove('flex');
+        }
+
+
+
+        function generateAnswerArea(question) {
+            const isAnswered = userAnswers[question.id] !== undefined;
+            const isSubmitted = userAnswers[question.id + '_submitted'] === true;
+            const isLocked = userAnswers[question.id + '_locked'] === true;
+            
+            switch (question.type) {
+                case 'multiple_choice':
+                    let mcContent = question.options.map((option, index) => {
+                        let labelClass = "flex items-center p-4 rounded-lg mb-3 transition-colors";
+                        let optionClass = "";
+                        let disabled = isSubmitted || isLocked;
+                        
+                        if (isSubmitted) {
+                            if (index === question.correct) {
+                                labelClass += " correct-answer";
+                                optionClass = "text-green-700 font-semibold";
+                            } else if (userAnswers[question.id] === index && index !== question.correct) {
+                                labelClass += " wrong-answer";
+                                optionClass = "text-red-700 font-semibold";
+                            } else {
+                                labelClass += " bg-gray-100";
+                                optionClass = "text-gray-600";
+                            }
+                        } else if (isLocked) {
+                            if (userAnswers[question.id] === index) {
+                                labelClass += " locked-answer";
+                                optionClass = "text-orange-700 font-semibold";
+                            } else {
+                                labelClass += " bg-gray-100";
+                                optionClass = "text-gray-600";
+                            }
+                        } else {
+                            labelClass += " bg-gray-50 hover:bg-gray-100 cursor-pointer";
+                        }
+                        
+                        return `
+                            <label class="${labelClass}">
+                                <input type="radio" name="answer" value="${index}" class="mr-3" ${disabled ? 'disabled' : ''}>
+                                <span class="font-medium mr-2">${String.fromCharCode(65 + index)}.</span>
+                                <span class="${optionClass}">${option}</span>
+                                ${isSubmitted && index === question.correct ? '<span class="ml-auto text-green-600">✓</span>' : ''}
+                                ${isSubmitted && userAnswers[question.id] === index && index !== question.correct ? '<span class="ml-auto text-red-600">✗</span>' : ''}
+                                ${isLocked && userAnswers[question.id] === index ? '<span class="ml-auto text-orange-600">🔒</span>' : ''}
+                            </label>
+                        `;
+                    }).join('');
+                    
+                    if (!isSubmitted && !isLocked) {
+                        mcContent += `
+                            <button onclick="submitAnswer(${question.id})" class="w-full mt-4 bg-emerald-500 text-white py-3 px-6 rounded-lg hover:bg-emerald-600 transition-colors font-medium">
+                                📤 Kirim Jawaban
+                            </button>
+                        `;
+                    } else if (isSubmitted) {
+                        const isCorrect = userAnswers[question.id] === question.correct;
+                        mcContent += `
+                            <div class="mt-4 p-4 rounded-lg ${isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}">
+                                <div class="flex items-center">
+                                    <span class="text-2xl mr-3">${isCorrect ? '🎉' : '😔'}</span>
+                                    <div>
+                                        <p class="font-semibold ${isCorrect ? 'text-green-800' : 'text-red-800'}">
+                                            ${isCorrect ? 'Benar!' : 'Salah!'}
+                                        </p>
+                                        <p class="text-sm ${isCorrect ? 'text-green-600' : 'text-red-600'}">
+                                            ${isCorrect ? `Kamu mendapat ${question.points} poin` : `Jawaban yang benar: ${String.fromCharCode(65 + question.correct)}. ${question.options[question.correct]}`}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    } else if (isLocked) {
+                        mcContent += `
+                            <div class="mt-4 p-4 rounded-lg bg-orange-50 border border-orange-200">
+                                <div class="flex items-center">
+                                    <span class="text-2xl mr-3">🔒</span>
+                                    <div>
+                                        <p class="font-semibold text-orange-800">Soal Terkunci!</p>
+                                        <p class="text-sm text-orange-600">Waktu habis - jawaban dikunci</p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                    return mcContent;
+                
+                case 'true_false':
+                    let tfContent = `
+                        <div class="space-y-3">
+                            <label class="flex items-center p-4 rounded-lg transition-colors ${isSubmitted || isLocked ? '' : 'cursor-pointer'} ${
+                                isSubmitted ? 
+                                    (question.correct === true ? 'correct-answer' : 
+                                     userAnswers[question.id] === true ? 'wrong-answer' : 'bg-gray-100') :
+                                isLocked ?
+                                    (userAnswers[question.id] === true ? 'locked-answer' : 'bg-gray-100') :
+                                    'bg-gray-50 hover:bg-gray-100'
+                            }">
+                                <input type="radio" name="answer" value="true" class="mr-3" ${isSubmitted || isLocked ? 'disabled' : ''}>
+                                <span class="font-medium ${
+                                    isSubmitted ? 
+                                        (question.correct === true ? 'text-green-700' : 
+                                         userAnswers[question.id] === true ? 'text-red-700' : 'text-gray-600') :
+                                    isLocked ?
+                                        (userAnswers[question.id] === true ? 'text-orange-700' : 'text-gray-600') :
+                                        'text-green-600'
+                                }">✓ Benar</span>
+                                ${isSubmitted && question.correct === true ? '<span class="ml-auto text-green-600">✓</span>' : ''}
+                                ${isSubmitted && userAnswers[question.id] === true && question.correct !== true ? '<span class="ml-auto text-red-600">✗</span>' : ''}
+                                ${isLocked && userAnswers[question.id] === true ? '<span class="ml-auto text-orange-600">🔒</span>' : ''}
+                            </label>
+                            <label class="flex items-center p-4 rounded-lg transition-colors ${isSubmitted || isLocked ? '' : 'cursor-pointer'} ${
+                                isSubmitted ? 
+                                    (question.correct === false ? 'correct-answer' : 
+                                     userAnswers[question.id] === false ? 'wrong-answer' : 'bg-gray-100') :
+                                isLocked ?
+                                    (userAnswers[question.id] === false ? 'locked-answer' : 'bg-gray-100') :
+                                    'bg-gray-50 hover:bg-gray-100'
+                            }">
+                                <input type="radio" name="answer" value="false" class="mr-3" ${isSubmitted || isLocked ? 'disabled' : ''}>
+                                <span class="font-medium ${
+                                    isSubmitted ? 
+                                        (question.correct === false ? 'text-green-700' : 
+                                         userAnswers[question.id] === false ? 'text-red-700' : 'text-gray-600') :
+                                    isLocked ?
+                                        (userAnswers[question.id] === false ? 'text-orange-700' : 'text-gray-600') :
+                                        'text-red-600'
+                                }">✗ Salah</span>
+                                ${isSubmitted && question.correct === false ? '<span class="ml-auto text-green-600">✓</span>' : ''}
+                                ${isSubmitted && userAnswers[question.id] === false && question.correct !== false ? '<span class="ml-auto text-red-600">✗</span>' : ''}
+                                ${isLocked && userAnswers[question.id] === false ? '<span class="ml-auto text-orange-600">🔒</span>' : ''}
+                            </label>
+                        </div>
+                    `;
+                    
+                    if (!isSubmitted && !isLocked) {
+                        tfContent += `
+                            <button onclick="submitAnswer(${question.id})" class="w-full mt-4 bg-emerald-500 text-white py-3 px-6 rounded-lg hover:bg-emerald-600 transition-colors font-medium">
+                                📤 Kirim Jawaban
+                            </button>
+                        `;
+                    } else if (isSubmitted) {
+                        const isCorrect = userAnswers[question.id] === question.correct;
+                        tfContent += `
+                            <div class="mt-4 p-4 rounded-lg ${isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}">
+                                <div class="flex items-center">
+                                    <span class="text-2xl mr-3">${isCorrect ? '🎉' : '😔'}</span>
+                                    <div>
+                                        <p class="font-semibold ${isCorrect ? 'text-green-800' : 'text-red-800'}">
+                                            ${isCorrect ? 'Benar!' : 'Salah!'}
+                                        </p>
+                                        <p class="text-sm ${isCorrect ? 'text-green-600' : 'text-red-600'}">
+                                            ${isCorrect ? `Kamu mendapat ${question.points} poin` : `Jawaban yang benar: ${question.correct ? 'Benar' : 'Salah'}`}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    } else if (isLocked) {
+                        tfContent += `
+                            <div class="mt-4 p-4 rounded-lg bg-orange-50 border border-orange-200">
+                                <div class="flex items-center">
+                                    <span class="text-2xl mr-3">🔒</span>
+                                    <div>
+                                        <p class="font-semibold text-orange-800">Soal Terkunci!</p>
+                                        <p class="text-sm text-orange-600">Waktu habis - jawaban dikunci</p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                    return tfContent;
+                
+                case 'matching':
+                    let matchContent = `
+                        <div class="space-y-4">
+                            ${question.pairs.map((pair, index) => `
+                                <div class="flex items-center space-x-4">
+                                    <div class="flex-1 bg-blue-50 p-3 rounded-lg font-medium">${pair.left}</div>
+                                    <div class="text-2xl">↔</div>
+                                    <input type="text" placeholder="Tulis jawabannya..." 
+                                           class="flex-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                                           data-pair-index="${index}" ${isSubmitted || isLocked ? 'readonly' : ''}>
+                                </div>
+                            `).join('')}
+                            <div class="mt-4 p-3 bg-yellow-50 rounded-lg">
+                                <p class="text-sm text-yellow-800">💡 <strong>Tips:</strong> Tulis jawaban yang tepat untuk setiap pasangan di atas!</p>
+                            </div>
+                        </div>
+                    `;
+                    
+                    if (!isSubmitted && !isLocked) {
+                        matchContent += `
+                            <button onclick="submitMatchingAnswer(${question.id})" class="w-full mt-4 bg-emerald-500 text-white py-3 px-6 rounded-lg hover:bg-emerald-600 transition-colors font-medium">
+                                📤 Kirim Jawaban
+                            </button>
+                        `;
+                    } else if (isSubmitted) {
+                        matchContent += `
+                            <div class="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <span class="text-2xl mr-3">📝</span>
+                                        <div>
+                                            <p class="font-semibold text-blue-800">Jawaban Terkirim!</p>
+                                            <p class="text-sm text-blue-600">Jawaban sudah disimpan - penilaian manual</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <label class="text-sm font-medium text-gray-700">Poin Manual:</label>
+                                        <input type="number" min="0" max="${question.points}" value="${userAnswers[question.id + '_manual_score'] || 0}" 
+                                               class="w-16 p-2 border border-gray-300 rounded text-center"
+                                               onchange="saveManualScore(${question.id}, this.value)">
+                                        <span class="text-sm text-gray-500">/ ${question.points}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    } else if (isLocked) {
+                        matchContent += `
+                            <div class="mt-4 p-4 bg-orange-50 border border-orange-200 rounded-lg">
+                                <div class="flex items-center">
+                                    <span class="text-2xl mr-3">🔒</span>
+                                    <div>
+                                        <p class="font-semibold text-orange-800">Soal Terkunci!</p>
+                                        <p class="text-sm text-orange-600">Waktu habis - soal dikunci</p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                    return matchContent;
+                
+                case 'fill_blank':
+                    let fillContent = `
+                        <div class="space-y-4">
+                            <input type="text" placeholder="Tulis jawabanmu di sini..." 
+                                   class="w-full p-4 text-lg border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                                   id="fillAnswer" ${isSubmitted || isLocked ? 'readonly' : ''}>
+                            <div class="p-3 bg-blue-50 rounded-lg">
+                                <p class="text-sm text-blue-800">💡 <strong>Tips:</strong> Tulis jawaban dengan huruf kapital yang tepat!</p>
+                            </div>
+                        </div>
+                    `;
+                    
+                    if (!isSubmitted && !isLocked) {
+                        fillContent += `
+                            <button onclick="submitFillAnswer(${question.id})" class="w-full mt-4 bg-emerald-500 text-white py-3 px-6 rounded-lg hover:bg-emerald-600 transition-colors font-medium">
+                                📤 Kirim Jawaban
+                            </button>
+                        `;
+                    } else if (isSubmitted) {
+                        fillContent += `
+                            <div class="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <span class="text-2xl mr-3">📝</span>
+                                        <div>
+                                            <p class="font-semibold text-blue-800">Jawaban Terkirim!</p>
+                                            <p class="text-sm text-blue-600">Jawaban: "${userAnswers[question.id]}"</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <label class="text-sm font-medium text-gray-700">Poin Manual:</label>
+                                        <input type="number" min="0" max="${question.points}" value="${userAnswers[question.id + '_manual_score'] || 0}" 
+                                               class="w-16 p-2 border border-gray-300 rounded text-center"
+                                               onchange="saveManualScore(${question.id}, this.value)">
+                                        <span class="text-sm text-gray-500">/ ${question.points}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    } else if (isLocked) {
+                        fillContent += `
+                            <div class="mt-4 p-4 bg-orange-50 border border-orange-200 rounded-lg">
+                                <div class="flex items-center">
+                                    <span class="text-2xl mr-3">🔒</span>
+                                    <div>
+                                        <p class="font-semibold text-orange-800">Soal Terkunci!</p>
+                                        <p class="text-sm text-orange-600">Waktu habis - soal dikunci</p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                    return fillContent;
+                
+                case 'essay':
+                    let essayContent = `
+                        <div class="space-y-4">
+                            <textarea placeholder="Tulis jawabanmu dengan lengkap di sini..." rows="6"
+                                      class="w-full p-4 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none"
+                                      id="essayAnswer" ${isSubmitted || isLocked ? 'readonly' : ''}></textarea>
+                            <div class="p-3 bg-purple-50 rounded-lg">
+                                <p class="text-sm text-purple-800">💡 <strong>Tips:</strong> Jelaskan jawabanmu dengan kalimat yang lengkap dan jelas!</p>
+                            </div>
+                        </div>
+                    `;
+                    
+                    if (!isSubmitted && !isLocked) {
+                        essayContent += `
+                            <button onclick="submitEssayAnswer(${question.id})" class="w-full mt-4 bg-emerald-500 text-white py-3 px-6 rounded-lg hover:bg-emerald-600 transition-colors font-medium">
+                                📤 Kirim Jawaban
+                            </button>
+                        `;
+                    } else if (isSubmitted) {
+                        essayContent += `
+                            <div class="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <span class="text-2xl mr-3">📝</span>
+                                        <div>
+                                            <p class="font-semibold text-blue-800">Jawaban Terkirim!</p>
+                                            <p class="text-sm text-blue-600">Jawaban sudah disimpan</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <label class="text-sm font-medium text-gray-700">Poin Manual:</label>
+                                        <input type="number" min="0" max="${question.points}" value="${userAnswers[question.id + '_manual_score'] || 0}" 
+                                               class="w-16 p-2 border border-gray-300 rounded text-center"
+                                               onchange="saveManualScore(${question.id}, this.value)">
+                                        <span class="text-sm text-gray-500">/ ${question.points}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    } else if (isLocked) {
+                        essayContent += `
+                            <div class="mt-4 p-4 bg-orange-50 border border-orange-200 rounded-lg">
+                                <div class="flex items-center">
+                                    <span class="text-2xl mr-3">🔒</span>
+                                    <div>
+                                        <p class="font-semibold text-orange-800">Soal Terkunci!</p>
+                                        <p class="text-sm text-orange-600">Waktu habis - soal dikunci</p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                    return essayContent;
+                
+                default:
+                    return '<p>Tipe soal tidak dikenali</p>';
+            }
+        }
+
+        function getQuestionTypeLabel(type) {
+            const labels = {
+                'multiple_choice': 'Pilihan Ganda',
+                'true_false': 'Benar/Salah',
+                'matching': 'Menjodohkan',
+                'fill_blank': 'Isian',
+                'essay': 'Uraian'
+            };
+            return labels[type] || type;
+        }
+
+        // Submit functions for different question types
+        function submitAnswer(questionId) {
+            const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+            if (!selectedAnswer) {
+                alert('Silakan pilih jawaban terlebih dahulu!');
+                return;
+            }
+            
+            stopTimer(); // Stop timer when answer is submitted
+            
+            const answer = selectedAnswer.value === 'true' ? true : 
+                          selectedAnswer.value === 'false' ? false : 
+                          parseInt(selectedAnswer.value);
+            
+            userAnswers[questionId] = answer;
+            userAnswers[questionId + '_submitted'] = true;
+            
+            calculateScore();
+            saveProgress();
+            
+            // Refresh the question display to show results
+            const question = quizData.find(q => q.id === questionId);
+            document.getElementById('questionAnswerArea').innerHTML = generateAnswerArea(question);
+            initializeQuestionPocket();
+        }
+
+        function submitMatchingAnswer(questionId) {
+            const inputs = document.querySelectorAll('input[data-pair-index]');
+            const answers = {};
+            let hasEmptyAnswer = false;
+            
+            inputs.forEach((input, index) => {
+                if (!input.value.trim()) {
+                    hasEmptyAnswer = true;
+                }
+                answers[index] = input.value.trim();
+            });
+            
+            if (hasEmptyAnswer) {
+                alert('Silakan isi semua jawaban terlebih dahulu!');
+                return;
+            }
+            
+            stopTimer(); // Stop timer when answer is submitted
+            
+            userAnswers[questionId] = answers;
+            userAnswers[questionId + '_submitted'] = true;
+            
+            calculateScore();
+            saveProgress();
+            
+            // Refresh the question display
+            const question = quizData.find(q => q.id === questionId);
+            document.getElementById('questionAnswerArea').innerHTML = generateAnswerArea(question);
+            initializeQuestionPocket();
+        }
+
+        function submitFillAnswer(questionId) {
+            const answer = document.getElementById('fillAnswer').value.trim();
+            if (!answer) {
+                alert('Silakan isi jawaban terlebih dahulu!');
+                return;
+            }
+            
+            stopTimer(); // Stop timer when answer is submitted
+            
+            userAnswers[questionId] = answer;
+            userAnswers[questionId + '_submitted'] = true;
+            
+            calculateScore();
+            saveProgress();
+            
+            // Refresh the question display
+            const question = quizData.find(q => q.id === questionId);
+            document.getElementById('questionAnswerArea').innerHTML = generateAnswerArea(question);
+            initializeQuestionPocket();
+        }
+
+        function submitEssayAnswer(questionId) {
+            const answer = document.getElementById('essayAnswer').value.trim();
+            if (!answer) {
+                alert('Silakan isi jawaban terlebih dahulu!');
+                return;
+            }
+            
+            stopTimer(); // Stop timer when answer is submitted
+            
+            userAnswers[questionId] = answer;
+            userAnswers[questionId + '_submitted'] = true;
+            
+            calculateScore();
+            saveProgress();
+            
+            // Refresh the question display
+            const question = quizData.find(q => q.id === questionId);
+            document.getElementById('questionAnswerArea').innerHTML = generateAnswerArea(question);
+            initializeQuestionPocket();
+        }
+
+        function saveManualScore(questionId, score) {
+            userAnswers[questionId + '_manual_score'] = parseInt(score) || 0;
+            calculateScore();
+            saveProgress();
+            initializeQuestionPocket();
+        }
+
+        function loadSavedAnswer(question) {
+            const answer = userAnswers[question.id];
+            const isSubmitted = userAnswers[question.id + '_submitted'];
+            if (!answer && answer !== false && answer !== 0) return;
+
+            switch (question.type) {
+                case 'multiple_choice':
+                    const mcRadio = document.querySelector(`input[name="answer"][value="${answer}"]`);
+                    if (mcRadio) mcRadio.checked = true;
+                    break;
+                
+                case 'true_false':
+                    const tfRadio = document.querySelector(`input[name="answer"][value="${answer}"]`);
+                    if (tfRadio) tfRadio.checked = true;
+                    break;
+                
+                case 'matching':
+                    const inputs = document.querySelectorAll('input[data-pair-index]');
+                    inputs.forEach((input, index) => {
+                        if (answer && answer[index]) {
+                            input.value = answer[index];
+                        }
+                    });
+                    break;
+                
+                case 'fill_blank':
+                    const fillInput = document.getElementById('fillAnswer');
+                    if (fillInput && answer) fillInput.value = answer;
+                    break;
+                
+                case 'essay':
+                    const textarea = document.getElementById('essayAnswer');
+                    if (textarea && answer) textarea.value = answer;
+                    
+                    const manualScore = userAnswers[question.id + '_manual_score'];
+                    if (manualScore !== undefined) {
+                        const scoreInput = document.querySelector('input[type="number"]');
+                        if (scoreInput) scoreInput.value = manualScore;
+                    }
+                    break;
+            }
+        }
+
+        function calculateScore() {
+            totalScore = 0;
+            
+            shuffledQuizData.forEach(question => {
+                const answer = userAnswers[question.id];
+                const isSubmitted = userAnswers[question.id + '_submitted'];
+                
+                // Only calculate score for submitted answers
+                if (!isSubmitted || (!answer && answer !== false && answer !== 0)) return;
+                
+                let points = 0;
+                
+                switch (question.type) {
+                    case 'multiple_choice':
+                        if (answer === question.correct) {
+                            points = question.points;
+                        }
+                        break;
+                    
+                    case 'true_false':
+                        if (answer === question.correct) {
+                            points = question.points;
+                        }
+                        break;
+                    
+                    case 'matching':
+                        const manualScoreMatching = userAnswers[question.id + '_manual_score'];
+                        points = manualScoreMatching || 0;
+                        break;
+                    
+                    case 'fill_blank':
+                        const manualScoreFill = userAnswers[question.id + '_manual_score'];
+                        points = manualScoreFill || 0;
+                        break;
+                    
+                    case 'essay':
+                        const manualScore = userAnswers[question.id + '_manual_score'];
+                        points = manualScore || 0;
+                        break;
+                }
+                
+                totalScore += points;
+            });
+            
+            updateUI();
+        }
+
+        function updateUI() {
+            document.getElementById('currentScore').textContent = Math.round(totalScore);
+            
+            // Enable/disable review button based on answered questions
+            const hasAnsweredQuestions = shuffledQuizData.some(question => {
+                return userAnswers[question.id] !== undefined || userAnswers[question.id + '_submitted'] === true;
+            });
+            
+            const reviewBtn = document.getElementById('reviewAnswersBtn');
+            if (hasAnsweredQuestions) {
+                reviewBtn.disabled = false;
+                reviewBtn.classList.remove('disabled:bg-gray-400', 'disabled:cursor-not-allowed');
+                reviewBtn.classList.add('hover:bg-purple-600');
+            } else {
+                reviewBtn.disabled = true;
+                reviewBtn.classList.add('disabled:bg-gray-400', 'disabled:cursor-not-allowed');
+                reviewBtn.classList.remove('hover:bg-purple-600');
+            }
+        }
+
+        function showScoreModal() {
+            calculateScore();
+            const finalScore = Math.round((totalScore / 35) * 100);
+            document.getElementById('finalScore').textContent = finalScore;
+            
+            let message = '';
+            if (finalScore >= 90) {
+                message = 'Luar biasa! Kamu sangat memahami Asmaul Husna! 🌟';
+            } else if (finalScore >= 80) {
+                message = 'Bagus sekali! Pemahaman kamu tentang Asmaul Husna sangat baik! 👏';
+            } else if (finalScore >= 70) {
+                message = 'Baik! Terus belajar untuk memahami Asmaul Husna lebih dalam! 📚';
+            } else if (finalScore >= 60) {
+                message = 'Cukup baik! Masih perlu belajar lebih giat lagi! 💪';
+            } else {
+                message = 'Semangat! Yuk belajar lagi tentang Asmaul Husna! 🌈';
+            }
+            
+            document.getElementById('scoreMessage').textContent = message;
+            showModal('scoreModal');
+        }
+
+        function showReviewModal() {
+            const reviewContent = document.getElementById('reviewContent');
+            let content = '';
+            
+            // Group questions by type
+            const questionTypes = {
+                'multiple_choice': { title: '📝 Pilihan Ganda', questions: [] },
+                'true_false': { title: '✓ Benar/Salah', questions: [] },
+                'matching': { title: '🔗 Menjodohkan', questions: [] },
+                'fill_blank': { title: '✏️ Isian', questions: [] },
+                'essay': { title: '📄 Uraian', questions: [] }
+            };
+            
+            quizData.forEach((question, index) => {
+                const isSubmitted = userAnswers[question.id + '_submitted'] === true;
+                const hasAnswer = userAnswers[question.id] !== undefined;
+                
+                if (isSubmitted || hasAnswer) {
+                    questionTypes[question.type].questions.push({ question, index });
+                }
+            });
+            
+            // Generate content for each type
+            Object.keys(questionTypes).forEach(type => {
+                const typeData = questionTypes[type];
+                if (typeData.questions.length > 0) {
+                    content += `
+                        <div class="mb-8">
+                            <h4 class="text-lg font-bold text-gray-800 mb-4 border-b pb-2">${typeData.title}</h4>
+                            <div class="space-y-4">
+                    `;
+                    
+                    typeData.questions.forEach(({ question, index }) => {
+                        const isSubmitted = userAnswers[question.id + '_submitted'] === true;
+                        const userAnswer = userAnswers[question.id];
+                        
+                        let statusBadge = '';
+                        let answerDisplay = '';
+                        
+                        if (isSubmitted) {
+                            let isCorrect = false;
+                            switch (question.type) {
+                                case 'multiple_choice':
+                                case 'true_false':
+                                    isCorrect = userAnswer === question.correct;
+                                    break;
+                                case 'fill_blank':
+                                    const manualScoreFillReview = userAnswers[question.id + '_manual_score'] || 0;
+                                    isCorrect = manualScoreFillReview === question.points;
+                                    break;
+                                case 'matching':
+                                    const manualScoreMatchReview = userAnswers[question.id + '_manual_score'] || 0;
+                                    isCorrect = manualScoreMatchReview === question.points;
+                                    break;
+                                case 'essay':
+                                    const manualScore = userAnswers[question.id + '_manual_score'] || 0;
+                                    isCorrect = manualScore === question.points;
+                                    break;
+                            }
+                            
+                            statusBadge = isCorrect ? 
+                                '<span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">✓ Benar</span>' :
+                                '<span class="bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs font-medium">✗ Salah</span>';
+                        } else {
+                            statusBadge = '<span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">📝 Dikirim</span>';
+                        }
+                        
+                        // Format answer display based on question type
+                        switch (question.type) {
+                            case 'multiple_choice':
+                                if (isSubmitted) {
+                                    answerDisplay = `
+                                        <p><strong>Jawaban Anda:</strong> ${String.fromCharCode(65 + userAnswer)}. ${question.options[userAnswer]}</p>
+                                        <p><strong>Jawaban Benar:</strong> ${String.fromCharCode(65 + question.correct)}. ${question.options[question.correct]}</p>
+                                    `;
+                                } else {
+                                    answerDisplay = `<p><strong>Jawaban Anda:</strong> ${String.fromCharCode(65 + userAnswer)}. ${question.options[userAnswer]}</p>`;
+                                }
+                                break;
+                            case 'true_false':
+                                if (isSubmitted) {
+                                    answerDisplay = `
+                                        <p><strong>Jawaban Anda:</strong> ${userAnswer ? 'Benar' : 'Salah'}</p>
+                                        <p><strong>Jawaban Benar:</strong> ${question.correct ? 'Benar' : 'Salah'}</p>
+                                    `;
+                                } else {
+                                    answerDisplay = `<p><strong>Jawaban Anda:</strong> ${userAnswer ? 'Benar' : 'Salah'}</p>`;
+                                }
+                                break;
+                            case 'matching':
+                                const manualScoreMatchDisplay = userAnswers[question.id + '_manual_score'] || 0;
+                                answerDisplay = '<p><strong>Jawaban Anda:</strong></p><ul class="list-disc list-inside ml-4">';
+                                question.pairs.forEach((pair, pairIndex) => {
+                                    answerDisplay += `<li>${pair.left} → ${userAnswer[pairIndex] || '(tidak dijawab)'}</li>`;
+                                });
+                                answerDisplay += '</ul>';
+                                if (isSubmitted) {
+                                    answerDisplay += '<p><strong>Jawaban Benar:</strong></p><ul class="list-disc list-inside ml-4">';
+                                    question.pairs.forEach(pair => {
+                                        answerDisplay += `<li>${pair.left} → ${pair.right}</li>`;
+                                    });
+                                    answerDisplay += '</ul>';
+                                }
+                                answerDisplay += `<p><strong>Skor Manual:</strong> ${manualScoreMatchDisplay}/${question.points} poin</p>`;
+                                break;
+                            case 'fill_blank':
+                                const manualScoreFillDisplay = userAnswers[question.id + '_manual_score'] || 0;
+                                if (isSubmitted) {
+                                    answerDisplay = `
+                                        <p><strong>Jawaban Anda:</strong> ${userAnswer}</p>
+                                        <p><strong>Jawaban Benar:</strong> ${question.correct.join(' / ')}</p>
+                                        <p><strong>Skor Manual:</strong> ${manualScoreFillDisplay}/${question.points} poin</p>
+                                    `;
+                                } else {
+                                    answerDisplay = `
+                                        <p><strong>Jawaban Anda:</strong> ${userAnswer}</p>
+                                        <p><strong>Skor Manual:</strong> ${manualScoreFillDisplay}/${question.points} poin</p>
+                                    `;
+                                }
+                                break;
+                            case 'essay':
+                                const manualScore = userAnswers[question.id + '_manual_score'] || 0;
+                                answerDisplay = `
+                                    <p><strong>Jawaban Anda:</strong></p>
+                                    <div class="bg-gray-50 p-3 rounded border text-sm">${userAnswer}</div>
+                                    <p class="mt-2"><strong>Skor Manual:</strong> ${manualScore}/${question.points} poin</p>
+                                `;
+                                break;
+                        }
+                        
+                        content += `
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <div class="flex justify-between items-start mb-3">
+                                    <h5 class="font-semibold text-gray-800">Soal ${index + 1}</h5>
+                                    ${statusBadge}
+                                </div>
+                                <p class="text-gray-700 mb-3">${question.question}</p>
+                                <div class="text-sm text-gray-600">
+                                    ${answerDisplay}
+                                </div>
+                            </div>
+                        `;
+                    });
+                    
+                    content += `
+                            </div>
+                        </div>
+                    `;
+                }
+            });
+            
+            if (content === '') {
+                content = `
+                    <div class="text-center py-12">
+                        <div class="text-6xl mb-4">📝</div>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Belum Ada Jawaban</h4>
+                        <p class="text-gray-600">Mulai mengerjakan soal untuk melihat review jawaban</p>
+                    </div>
+                `;
+            }
+            
+            reviewContent.innerHTML = content;
+            showModal('reviewModal');
+        }
+
+        // Initialize
+        loadProgress();
+        
+        // Roulette Functions
+        function startRoulette() {
+            if (isRouletteSpinning) return;
+            
+            isRouletteSpinning = true;
+            const rouletteBtn = document.getElementById('rouletteBtn');
+            const rouletteDisplay = document.getElementById('rouletteDisplay');
+            
+            rouletteBtn.textContent = '🎲 Berputar...';
+            rouletteBtn.disabled = true;
+            rouletteBtn.classList.add('opacity-50', 'cursor-not-allowed');
+            
+            const groups = ['A', 'B', 'C', 'D', 'E'];
+            let spinCount = 0;
+            const maxSpins = 20 + Math.floor(Math.random() * 20); // 20-40 spins
+            
+            rouletteInterval = setInterval(() => {
+                const randomGroup = groups[Math.floor(Math.random() * groups.length)];
+                rouletteDisplay.textContent = randomGroup;
+                rouletteDisplay.style.transform = `rotate(${spinCount * 18}deg)`;
+                
+                spinCount++;
+                
+                if (spinCount >= maxSpins) {
+                    clearInterval(rouletteInterval);
+                    
+                    // Final result
+                    const finalGroup = groups[Math.floor(Math.random() * groups.length)];
+                    rouletteDisplay.textContent = finalGroup;
+                    rouletteDisplay.style.transform = 'rotate(0deg)';
+                    
+                    // Add celebration effect
+                    rouletteDisplay.classList.add('animate-bounce');
+                    setTimeout(() => {
+                        rouletteDisplay.classList.remove('animate-bounce');
+                    }, 1000);
+                    
+                    // Show result message
+                    setTimeout(() => {
+                        alert(`🎉 Kelompok ${finalGroup} terpilih! Silakan kelompok ${finalGroup} mengerjakan soal.`);
+                    }, 500);
+                    
+                    // Reset button
+                    rouletteBtn.textContent = '🎲 Putar Lagi';
+                    rouletteBtn.disabled = false;
+                    rouletteBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                    isRouletteSpinning = false;
+                }
+            }, 100);
+        }
+        
+        function resetRoulette() {
+            if (isRouletteSpinning) {
+                clearInterval(rouletteInterval);
+                isRouletteSpinning = false;
+            }
+            
+            const rouletteBtn = document.getElementById('rouletteBtn');
+            const rouletteDisplay = document.getElementById('rouletteDisplay');
+            
+            rouletteDisplay.textContent = '?';
+            rouletteDisplay.style.transform = 'rotate(0deg)';
+            rouletteDisplay.classList.remove('animate-bounce');
+            
+            rouletteBtn.textContent = '🎲 Putar Roulette';
+            rouletteBtn.disabled = false;
+            rouletteBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProgress();
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9843021f4639cec6',t:'MTc1ODcyNDUyNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
