@@ -70,7 +70,7 @@
     <!-- Quiz Interface -->
     <div id="quizInterface" class="hidden min-h-screen">
         <!-- Header -->
-        <div class="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-10">
+        <div class="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-20">
             <div class="container mx-auto px-4 py-4">
                 <div class="flex justify-between items-center">
                     <div class="flex items-center space-x-4">
@@ -93,6 +93,34 @@
                         </button>
                         <button onclick="resetProgress()" class="bg-red-500 text-white px-3 py-1 rounded-lg text-sm hover:bg-red-600 transition-colors">
                             Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compact Roulette Bar (Hidden by default, shown when scrolling) -->
+        <div id="compactRouletteBar" class="fixed top-16 left-0 right-0 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white shadow-lg z-10 transform -translate-y-full transition-transform duration-300">
+            <div class="container mx-auto px-4 py-2">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-sm font-medium">🎰 Kelompok:</span>
+                            <div id="compactRouletteDisplay" class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-lg font-bold text-purple-600">
+                                ?
+                            </div>
+                        </div>
+                        <div class="text-xs opacity-75">Roulette Kelompok A-E</div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button onclick="startRoulette()" id="compactRouletteBtn" class="bg-white text-purple-600 px-3 py-1 rounded-full text-sm font-medium hover:bg-gray-100 transition-all duration-300">
+                            🎲 Putar
+                        </button>
+                        <button onclick="resetRoulette()" class="bg-red-500 text-white px-3 py-1 rounded-full text-xs hover:bg-red-600 transition-all duration-300">
+                            🔄
+                        </button>
+                        <button onclick="toggleCompactRoulette()" class="bg-white/20 text-white px-2 py-1 rounded text-xs hover:bg-white/30 transition-all duration-300">
+                            ▼
                         </button>
                     </div>
                 </div>
@@ -1973,11 +2001,18 @@
             
             isRouletteSpinning = true;
             const rouletteBtn = document.getElementById('rouletteBtn');
+            const compactRouletteBtn = document.getElementById('compactRouletteBtn');
             const rouletteDisplay = document.getElementById('rouletteDisplay');
+            const compactRouletteDisplay = document.getElementById('compactRouletteDisplay');
             
+            // Update both buttons
             rouletteBtn.textContent = '🎲 Berputar...';
             rouletteBtn.disabled = true;
             rouletteBtn.classList.add('opacity-50', 'cursor-not-allowed');
+            
+            compactRouletteBtn.textContent = '🎲 Berputar...';
+            compactRouletteBtn.disabled = true;
+            compactRouletteBtn.classList.add('opacity-50', 'cursor-not-allowed');
             
             const groups = ['A', 'B', 'C', 'D', 'E'];
             let spinCount = 0;
@@ -1985,8 +2020,13 @@
             
             rouletteInterval = setInterval(() => {
                 const randomGroup = groups[Math.floor(Math.random() * groups.length)];
+                
+                // Update both displays
                 rouletteDisplay.textContent = randomGroup;
                 rouletteDisplay.style.transform = `rotate(${spinCount * 18}deg)`;
+                
+                compactRouletteDisplay.textContent = randomGroup;
+                compactRouletteDisplay.style.transform = `rotate(${spinCount * 18}deg)`;
                 
                 spinCount++;
                 
@@ -1995,13 +2035,21 @@
                     
                     // Final result
                     const finalGroup = groups[Math.floor(Math.random() * groups.length)];
+                    
+                    // Update both displays
                     rouletteDisplay.textContent = finalGroup;
                     rouletteDisplay.style.transform = 'rotate(0deg)';
                     
-                    // Add celebration effect
+                    compactRouletteDisplay.textContent = finalGroup;
+                    compactRouletteDisplay.style.transform = 'rotate(0deg)';
+                    
+                    // Add celebration effect to both
                     rouletteDisplay.classList.add('animate-bounce');
+                    compactRouletteDisplay.classList.add('animate-bounce');
+                    
                     setTimeout(() => {
                         rouletteDisplay.classList.remove('animate-bounce');
+                        compactRouletteDisplay.classList.remove('animate-bounce');
                     }, 1000);
                     
                     // Show result message
@@ -2009,10 +2057,15 @@
                         alert(`🎉 Kelompok ${finalGroup} terpilih! Silakan kelompok ${finalGroup} mengerjakan soal.`);
                     }, 500);
                     
-                    // Reset button
+                    // Reset both buttons
                     rouletteBtn.textContent = '🎲 Putar Lagi';
                     rouletteBtn.disabled = false;
                     rouletteBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                    
+                    compactRouletteBtn.textContent = '🎲 Putar';
+                    compactRouletteBtn.disabled = false;
+                    compactRouletteBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                    
                     isRouletteSpinning = false;
                 }
             }, 100);
@@ -2025,21 +2078,90 @@
             }
             
             const rouletteBtn = document.getElementById('rouletteBtn');
+            const compactRouletteBtn = document.getElementById('compactRouletteBtn');
             const rouletteDisplay = document.getElementById('rouletteDisplay');
+            const compactRouletteDisplay = document.getElementById('compactRouletteDisplay');
             
+            // Reset both displays
             rouletteDisplay.textContent = '?';
             rouletteDisplay.style.transform = 'rotate(0deg)';
             rouletteDisplay.classList.remove('animate-bounce');
             
+            compactRouletteDisplay.textContent = '?';
+            compactRouletteDisplay.style.transform = 'rotate(0deg)';
+            compactRouletteDisplay.classList.remove('animate-bounce');
+            
+            // Reset both buttons
             rouletteBtn.textContent = '🎲 Putar Roulette';
             rouletteBtn.disabled = false;
             rouletteBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+            
+            compactRouletteBtn.textContent = '🎲 Putar';
+            compactRouletteBtn.disabled = false;
+            compactRouletteBtn.classList.remove('opacity-50', 'cursor-not-allowed');
         }
 
+        // Compact Roulette Functions
+        let isCompactRouletteVisible = false;
+        let lastScrollTop = 0;
+        
+        function toggleCompactRoulette() {
+            const compactBar = document.getElementById('compactRouletteBar');
+            if (isCompactRouletteVisible) {
+                compactBar.style.transform = 'translateY(-100%)';
+                isCompactRouletteVisible = false;
+            } else {
+                compactBar.style.transform = 'translateY(0)';
+                isCompactRouletteVisible = true;
+            }
+        }
+        
+        function syncRouletteDisplays() {
+            const mainDisplay = document.getElementById('rouletteDisplay');
+            const compactDisplay = document.getElementById('compactRouletteDisplay');
+            
+            if (mainDisplay && compactDisplay) {
+                compactDisplay.textContent = mainDisplay.textContent;
+                compactDisplay.style.transform = mainDisplay.style.transform;
+            }
+        }
+        
+        // Scroll detection for compact roulette
+        function handleScroll() {
+            if (document.getElementById('quizInterface').classList.contains('hidden')) return;
+            
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const rouletteSection = document.querySelector('.bg-gradient-to-r.from-purple-500');
+            
+            if (rouletteSection) {
+                const rouletteSectionBottom = rouletteSection.offsetTop + rouletteSection.offsetHeight;
+                const compactBar = document.getElementById('compactRouletteBar');
+                
+                // Show compact roulette when scrolled past the main roulette section
+                if (scrollTop > rouletteSectionBottom - 100) {
+                    if (!isCompactRouletteVisible) {
+                        compactBar.style.transform = 'translateY(0)';
+                        isCompactRouletteVisible = true;
+                        syncRouletteDisplays();
+                    }
+                } else {
+                    if (isCompactRouletteVisible) {
+                        compactBar.style.transform = 'translateY(-100%)';
+                        isCompactRouletteVisible = false;
+                    }
+                }
+            }
+            
+            lastScrollTop = scrollTop;
+        }
+        
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+        
         // Initialize when page loads
         document.addEventListener('DOMContentLoaded', function() {
             loadProgress();
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9843021f4639cec6',t:'MTc1ODcyNDUyNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9843216980e3cecf',t:'MTc1ODcyNTgwNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
